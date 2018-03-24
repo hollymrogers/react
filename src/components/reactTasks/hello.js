@@ -1,3 +1,7 @@
 import React from 'react'
 
-export default () => <p>Question 1 answer goes here!</p>
+export default class Hello extends React.Component {
+  render() {
+    return <p>Hello</p>
+  }
+}
