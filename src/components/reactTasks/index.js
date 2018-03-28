@@ -6,6 +6,11 @@ import Person from './person'
 import PersonWithProps from './PersonWithProps'
 import Adder from './adder'
 import Numbers from './numbers'
+import EvenNumbers from './evens'
+import BoldEvenNumbers from './boldevens'
+import Company from './company'
+import Text from './text'
+import BigButton from './button'
 
 export default () => {
   return (
@@ -41,6 +46,28 @@ export default () => {
       <Numbers numbers={[1, 2, 3, 4, 5, 6, 7]} />
 
       <p>Question 8 Answer</p>
+      <EvenNumbers numbers={[1, 2, 3, 4, 5]} />
+
+      <p>Question 9 Answer</p>
+      <BoldEvenNumbers numbers={[1, 2, 3, 4, 5]} />
+
+      <p>Question 10 Answer</p>
+      <Person person={{ name: 'John', age: 20 }} />
+
+      <p>Question 11 Answer</p>
+      <Company name={'ZDEV'} employees={[{ name: 'John', age: 20 }, { name: 'Rich', age: 27 }]} />
+
+      <p>Question 12a Answer</p>
+      <Text>Hello There!</Text>
+
+      <p>Question 12b Answer</p>
+      <Text style={{ color: 'pink' }}>Hello There!</Text>
+
+      <p>Question 13 Answer</p>
+      <button onClick={() => console.log('Hello')}>Button</button>
+
+      <p>Question 14 Answer</p>
+      <BigButton onPress={() => console.log('Hello World')}>Press me!</BigButton>
 
     </div>
   )
