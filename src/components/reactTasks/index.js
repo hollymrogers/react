@@ -10,7 +10,12 @@ import EvenNumbers from './evens'
 import BoldEvenNumbers from './boldevens'
 import Company from './company'
 import Text from './text'
+import _ from 'lodash'
 import BigButton from './button'
+import RandomNumberGenerator from './randomnumber'
+import NextName from './nextname'
+import BoxGrower from './boxgrower'
+import NameList from './namelist'
 
 export default () => {
   return (
@@ -68,6 +73,18 @@ export default () => {
 
       <p>Question 14 Answer</p>
       <BigButton onPress={() => console.log('Hello World')}>Press me!</BigButton>
+
+      <p>Question 15 Answer</p>
+      <RandomNumberGenerator />
+
+      <p>Question 16 Answer</p>
+      <NextName names={['Richard', 'John']} />
+
+      <p>Question 17 Answer</p>
+      <BoxGrower />
+
+      <p>Question 18 Answer</p>
+      <NameList />
 
     </div>
   )
