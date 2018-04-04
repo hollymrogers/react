@@ -2,14 +2,9 @@ import React from 'react'
 
 export default class EvenNumbers extends React.Component {
   render() {
-    const evens = this.props.numbers.filter(n => n % 2 === 0)
+    const evens = _.filter(this.props.numbers, n => n % 2 === 0)
+    const numbersToDisplay = _.map(evens, n => <li>{n}</li>)
 
-    const numbersToDisplay = evens.map(n => <li>{n}</li>)
-
-    return (
-      <ul>
-        {numbersToDisplay}
-      </ul>
-    )
+    return <ul>{numbersToDisplay}</ul>
   }
 }

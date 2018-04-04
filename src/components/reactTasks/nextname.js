@@ -10,12 +10,12 @@ export default class NextName extends React.Component {
     return (
       <div>
         <p>{this.props.names[this.state.i]}</p>
-        <button onClick={this._handleClick.bind(this)}>Next</button>
+        <button onClick={this.handleClick.bind(this)}>Next</button>
       </div>
     )
   }
 
-  _handleClick() {
+  handleClick() {
     if (this.state.i == this.props.names.length - 1) {
       this.setState({ i: 0 })
     } else if (this.state.i < this.props.names.length) {

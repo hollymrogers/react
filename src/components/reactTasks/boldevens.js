@@ -6,7 +6,12 @@ export default class BoldEvenNumbers extends React.Component {
       <ul>
         {this.props.numbers.map(n => {
           if (n % 2 === 0) {
-            return <li><b> {n} </b></li>
+            return (
+              <li>
+                <b> {n} </b>
+              </li>
+            )
+          } else {
             return <li> {n} </li>
           }
         })}
