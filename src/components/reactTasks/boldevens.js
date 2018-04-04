@@ -11,9 +11,8 @@ export default class BoldEvenNumbers extends React.Component {
                 <b> {n} </b>
               </li>
             )
-          } else {
-            return <li> {n} </li>
           }
+          return <li> {n} </li>
         })}
       </ul>
     )

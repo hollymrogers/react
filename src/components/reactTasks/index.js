@@ -31,7 +31,7 @@ export default () => {
       <HelloKitty />
 
       <p>Question 4 Answer</p>
-      <Person name={'John'} age={20} />
+      <Person />
 
       <p>Question 5a Answer</p>
       <PersonWithProps name={'John'} age={20} />
@@ -58,7 +58,7 @@ export default () => {
       <BoldEvenNumbers numbers={[1, 2, 3, 4, 5]} />
 
       <p>Question 10 Answer</p>
-      <PersonFromObject person={{ name: 'John', age: 20 }} />
+      <Person person={{ name: 'John', age: 20 }} />
 
       <p>Question 11 Answer</p>
       <Company name={'ZDEV'} employees={[{ name: 'John', age: 20 }]} />

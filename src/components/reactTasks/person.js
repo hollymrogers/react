@@ -6,8 +6,6 @@ export default class Person extends React.Component {
       <div>
         <p>Name: John</p>
         <p>Age: 20</p>
-        <p>Name: Rich</p>
-        <p>Age: 27</p>
       </div>
     )
   }
