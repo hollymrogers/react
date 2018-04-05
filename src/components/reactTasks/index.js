@@ -61,7 +61,7 @@ export default () => {
       <Person person={{ name: 'John', age: 20 }} />
 
       <p>Question 11 Answer</p>
-      <Company name={'ZDEV'} employees={[{ name: 'John', age: 20 }]} />
+      <Company name={'ZDEV'} employees={[{ name: 'John', age: 20 }, { name: 'Rich', age: 27 }]} />
 
       <p>Question 12a Answer</p>
       <Text>Hello There!</Text>
