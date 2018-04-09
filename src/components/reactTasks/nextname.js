@@ -18,7 +18,7 @@ export default class NextName extends React.Component {
   handleClick() {
     if (this.state.i == this.props.names.length - 1) {
       this.setState({ i: 0 })
-    } else if (this.state.i < this.props.names.length) {
+    } else {
       this.setState({ i: this.state.i + 1 })
     }
   }
