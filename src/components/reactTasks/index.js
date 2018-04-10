@@ -58,7 +58,7 @@ export default () => {
       <BoldEvenNumbers numbers={[1, 2, 3, 4, 5]} />
 
       <p>Question 10 Answer</p>
-      <Person person={{ name: 'John', age: 20 }} />
+      <PersonFromObject person={{ name: 'John', age: 20 }} />
 
       <p>Question 11 Answer</p>
       <Company name={'ZDEV'} employees={[{ name: 'John', age: 20 }, { name: 'Rich', age: 27 }]} />

@@ -6,6 +6,13 @@ export default class NameList extends React.Component {
     this.state = { names: ['Richard'] }
   }
 
+handleClick() {
+    if (this.name.value.length > 0) {
+      this.setState({ names: this.state.names.concat(this.name.value) })
+      this.name.value = ''
+    }
+  }
+
   render() {
     return (
       <div>
@@ -14,12 +21,5 @@ export default class NameList extends React.Component {
         <button onClick={this.handleClick.bind(this)}>Add Name</button>
       </div>
     )
-  }
-
-  handleClick() {
-    if (this.name.value.length > 0) {
-      this.setState({ names: this.state.names.concat(this.name.value) })
-      this.name.value = ''
-    }
   }
 }
