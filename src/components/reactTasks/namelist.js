@@ -3,7 +3,7 @@ import React from 'react'
 export default class NameList extends React.Component {
   constructor() {
     super()
-    this.state = { names: ['Richard'] }
+    this.state = { names: [] }
   }
 
 handleClick() {
@@ -13,13 +13,18 @@ handleClick() {
     }
   }
 
+  handleChange(event) {
+    this.setState({value: event.target.value});
+  }
+
   render() {
     return (
       <div>
-        <ul>{this.state.names.map(name => <li>{name}</li>)}</ul>
-        <input ref={input => (this.name = input)} />
+     {this.state.names.map(name => <li>{name}</li>)}
+        <input ref={input => (this.name = input)} onChange={this.handleChange} />
         <button onClick={this.handleClick.bind(this)}>Add Name</button>
       </div>
     )
   }
 }
+
