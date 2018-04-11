@@ -3,27 +3,27 @@ import React from 'react'
 export default class NameList extends React.Component {
   constructor() {
     super()
-    this.state = { names: [] }
+    this.state = { names: [], name: ' '}
   }
 
 handleClick() {
-    if (this.name.value.length > 0) {
-      this.setState({ names: this.state.names.concat(this.name.value) })
-      this.name.value = ''
+    if (this.state.value.length > 0) {
+      this.setState({ names: this.state.names.concat(this.state.value) })
+      this.state.value = ''
     }
   }
 
   handleChange(event) {
-    this.setState({value: event.target.value});
+    this.setState({name: event.target.value});
   }
 
   render() {
     return (
-      <div>
+      <form>
      {this.state.names.map(name => <li>{name}</li>)}
-        <input ref={input => (this.name = input)} onChange={this.handleChange} />
+        <input type="text" name={this.state.name} onChange={this.handleChange}/>
         <button onClick={this.handleClick.bind(this)}>Add Name</button>
-      </div>
+      </form>
     )
   }
 }
