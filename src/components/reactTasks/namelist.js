@@ -2,22 +2,22 @@ import React from 'react'
 
 export default class NameList extends React.Component {
   constructor() {
-    super(props);
+    super()
     this.state = { names: [], name: ' '}
 
     this.handleChange = this.handleChange.bind(this);
 
   }
 
-handleChange(event) {
-    this.setState({name: event.target.value});
-  }
-
 handleClick() {
-    if (this.state.value.length > 0) {
+    if (this.state.names.length > 0) {
       this.setState({ names: this.state.names.push(this.state.name) })
       this.state.name = ''
     }
+  }
+
+  handleChange(event) {
+    this.setState({name: event.target.names});
   }
 
   render() {
